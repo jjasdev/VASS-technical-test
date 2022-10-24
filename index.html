@@ -1,0 +1,107 @@
+
+<!-- ****************** LEER ANTES DE EMPEZAR ****************** -->
+
+<!-- PRUEBA: Juan José Alonso Sánchez -->
+<!-- Debes completar este fichero con el HTML que consideres necesario dentro de contenedor WRAPPER -->
+<!-- Ten en cuenta que la calidad del código HTML generado es importante y debe ser lo más correcto posible -->
+<!-- El tiempo máximo de realizacion de la prueba es de 60 minutos. Entrega la prueba como esté en ese momento ya que la no finalización de la misma no es excluyente del proceso -->
+<!-- Está prohibido añadir cualquier tipo de framework o librería de apoyo a la maquetación (por ejemplo Bootstrap) -->
+<!-- No es necesario añadir librerías adicionales para realizar la prueba -->
+<!-- El simbolo + del contenido implica implementar un JS que pliegue y despliegue el contenedor dejando solo mostrados los titulos si está plegado -->
+<!-- El acceso a internet está permitido para la realización de la prueba -->
+<!-- La maquetación debe verse correctamente en el navegador Mozilla Firefox o en Chrome. Será la persona que realiza la prueba la que debe elegir el navegador. -->
+<!-- Estos son recursos extras, que podrías utilizar -->
+<!-- Fuente Roboto - https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap -->
+<!-- Iconos - https://kit-pro.fontawesome.com/releases/v5.15.3/css/pro.min.css - class: far fa-newspaper -->
+
+<!DOCTYPE html>
+<html lang="es">
+
+	<head>
+		<meta charset="UTF-8">
+		<title> Prueba Maquetacion - VASS </title>
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v5.15.3/css/pro.min.css">
+    
+	</head>
+
+	<body>
+
+		<header>
+			<div class="logo">
+				<a href="#" aria-label="Ir a la página principal">
+					<img class="logo__imagen" src="img/logotipo.png" alt="Logotipo VASS" title="Logotipo VASS" loading="lazy" width="165" height="64">
+				</a>
+			</div>
+			<section class="autor">
+				<h1>Prueba de maquetación: Juan José Alonso Sánchez</h1>
+			</section>
+			<nav class="main-nav">            
+				<ul class="main-nav__menu">                               
+					<li class="main-nav__menu-item">
+						<a class="main-nav__menu-link" aria-label="Ir a Opción 1" title="Ir a Opción 1" href="#">Opción 1</a>
+					</li>
+					<li class="main-nav__menu-item">
+						<a class="main-nav__menu-link" aria-label="Ir a Opción 2" title="Ir a Opción 2" href="#">Opción 2</a>
+					</li>
+					<li class="main-nav__menu-item">
+						<a class="main-nav__menu-link" aria-label="Ir a Opción 3" title="Ir a Opción 3" href="#">Opción 3</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<section class="wrapper">
+				<article class="article1">
+					<h2>Título 1</h2>
+					<p class="article1__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum iure nobis quisquam. Maiores commodi blanditiis possimus? Aperiam voluptatibus maiores blanditiis.</p>
+					<img class="article1__imagen" src="img/imagenContenido.png" alt="Imagen corporativa" title="Imagen corporativa" loading="lazy" width="328" height="204">
+				</article>
+				<article class="article2">
+					<h2>Título 2</h2>
+					<p class="article2__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum iure nobis quisquam. Maiores commodi blanditiis possimus? Aperiam voluptatibus maiores blanditiis.</p>
+				</article>
+			</section>
+			<aside>
+				<i class="far fa-newspaper aside__icon"></i>
+				<p class="aside__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo accusamus cum iure sequi minus fugiat expedita quis vero ad ut! <span class="aside__leer-mas">Leer más</span></p>
+				<p class="aside__text aside__text--hide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, perspiciatis.</p>
+			</aside>
+			<form class="formulario" action="#" method="post" enctype="multipart/form-data">
+				<fieldset>
+					<h2>Contacto</h2>
+					<div class="formulario__item">                    
+						<label for="email" class="formulario__label">Correo electrónico</label>
+						<input aria-label="Correo electrónico" placeholder="Correo electrónico" title="Correo electrónico" class="formulario__input" type="email" id="email" required>
+					</div>
+					<div class="formulario__item">
+                        <label for="mensaje" class="formulario__label">Mensaje</label>
+                        <textarea class="formulario__textarea" aria-label="Introducir Mensaje" title="Introducir Mensaje" id="mensaje" name="mensaje" maxlength="255" required></textarea>
+                    </div>
+					<input class="formulario__button" name="submit" type="submit" value="ENVIAR" aria-label="Enviar el formulario" title="Enviar el formulario">               
+				</fieldset>
+			</form>
+		</main>
+		<footer>
+			<nav class="footer-nav">            
+				<ul class="footer-nav__menu">                               
+					<li class="footer-nav__menu-item">
+						<a class="footer-nav__menu-link" aria-label="Ir a Enlace 1" title="Ir a Enlace 1" href="#">Enlace 1</a>
+					</li>
+					<li class="footer-nav__menu-item">
+						<a class="footer-nav__menu-link" aria-label="Ir a Enlace 2" title="Ir a Enlace 2" href="#">Enlace 2</a>
+					</li>
+				</ul>
+			</nav>
+		</footer>
+
+		<script src="js/jquery-3.6.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/scripts.js" type="text/javascript" charset="utf-8"></script>
+		
+	</body>
+	
+</html>
